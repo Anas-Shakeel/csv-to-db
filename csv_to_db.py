@@ -61,7 +61,7 @@ def main():
     message(f"""CSV found: '{META["csv_name"]}'\n""", 'success')
 
     # Create/GET the Database path/name
-    META['db_path'], META['db_name'] = get_db_or_quit(META['csv_directory'],
+    META['db_name'], META['db_path'] = get_db_or_quit(META['csv_directory'],
                                                       META['csv_name'])
 
     # ASK FOR TABLE NAME
